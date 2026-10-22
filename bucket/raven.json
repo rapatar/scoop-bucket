@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mjishnu/Raven/releases/download/v$version/Raven-v$version-win-x64-self-contained.zip",
+            "url": "https://github.com/mjishnu/Raven/releases/download/v1.1.2.1/Raven-v1.1.2.1-win-x64-self-contained.zip",
             "hash": "56a57095d71000f95315a7641e484d344f2c91afab08f4b4e9e1872a1c699767"
         }
     },
