@@ -1,0 +1,26 @@
+{
+    "version": "1.5.0",
+    "description": "An open-source remote desktop software, written in Rust. Uses the MSI payload so the app runs directly from disk D.",
+    "homepage": "https://github.com/rustdesk/rustdesk",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-x86_64.msi#/rustdesk.msi",
+            "hash": "624fe792ab1d76b35134dab84bff97a6bcd14043ffd090a2c6a2800f77580495"
+        }
+    },
+    "shortcuts": [
+        [
+            "PFiles64\\RustDesk\\RustDesk.exe",
+            "RustDesk"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rustdesk/rustdesk/releases/download/$version/rustdesk-$version-x86_64.msi#/rustdesk.msi"
+            }
+        }
+    }
+}
