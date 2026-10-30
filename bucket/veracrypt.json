@@ -1,29 +1,27 @@
 {
-    "version": "1.26.30",
-    "description": "Free open-source disk encryption software (portable).",
-    "homepage": "https://www.veracrypt.fr/",
-    "license": "Apache-2.0",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.30/VeraCrypt.Portable.1.26.30.exe#/VeraCrypt.exe",
-            "hash": "8891f597054ca9dc2d9182d607b02278fa728d6be2d5116330a02de3dffa8da3"
-        }
-    },
-    "shortcuts": [
-        [
-            "VeraCrypt.exe",
-            "VeraCrypt"
-        ]
-    ],
-    "checkver": {
-        "github": "https://github.com/veracrypt/VeraCrypt",
-        "regex": "VeraCrypt_([\\d.]+)"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_$version/VeraCrypt.Portable.$version.exe#/VeraCrypt.exe"
-            }
-        }
-    }
+    "version":  "1.26.30",
+    "description":  "Free open-source disk encryption software (portable).",
+    "homepage":  "https://www.veracrypt.fr/",
+    "license":  "Apache-2.0",
+    "architecture":  {
+                         "64bit":  {
+                                       "url":  "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.30/VeraCrypt.Portable.1.26.30.exe#/VeraCrypt.exe",
+                                       "hash":  "8891f597054ca9dc2d9182d607b02278fa728d6be2d5116330a02de3dffa8da3"
+                                   }
+                     },
+    "shortcuts":  [
+                      "VeraCrypt\\VeraCrypt-x64.exe",
+                      "VeraCrypt"
+                  ],
+    "checkver":  {
+                     "github":  "https://github.com/veracrypt/VeraCrypt",
+                     "regex":  "VeraCrypt_([\\d.]+)"
+                 },
+    "autoupdate":  {
+                       "architecture":  {
+                                            "64bit":  {
+                                                          "url":  "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_$version/VeraCrypt.Portable.$version.exe#/VeraCrypt.exe"
+                                                      }
+                                        }
+                   }
 }
