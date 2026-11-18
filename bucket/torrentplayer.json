@@ -1,0 +1,40 @@
+{
+    "version": "0.3.3",
+    "description": "Stream any torrent (video or audio) straight from the swarm, with instant seeking",
+    "homepage": "https://torrentplayer.io/",
+    "license": "MIT|Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/torrentplayer/torrentplayer/releases/download/v0.3.3/TorrentPlayer_0.3.3_x64_en-US.msi",
+            "hash": "85ace683a5122664f165b7f537afbade3cd24d6c790151fe00f428a77204d62b"
+        }
+    },
+    "extract_dir": "PFiles\\TorrentPlayer",
+    "depends": "lessmsi",
+    "bin": [
+        [
+            "TorrentPlayer.exe",
+            "torrentplayer"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "TorrentPlayer.exe",
+            "TorrentPlayer"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/torrentplayer/torrentplayer"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/torrentplayer/torrentplayer/releases/download/v$version/TorrentPlayer_$version_x64_en-US.msi"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS.txt",
+            "regex": "$sha256\\s+$basename"
+        }
+    }
+}
